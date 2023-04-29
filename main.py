@@ -33,8 +33,6 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument ('name', nargs='?')
     namespace = parser.parse_args()
-    #print("Введите текст: \n")
-    #full_url = urlparse(input("Введите текст: \n").strip())
     full_url = urlparse(str(namespace.name).strip())
     url = "{}{}".format(full_url.netloc, full_url.path)
     if is_bitlink(token, url):
