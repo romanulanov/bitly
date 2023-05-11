@@ -29,7 +29,7 @@ def count_clicks(token, url):
 
 def main():
     load_dotenv()
-    token = os.getenv("BITLY_TOKEN")
+    token = "Bearer " + os.getenv("BITLY_TOKEN")
     parser = argparse.ArgumentParser()
     parser.add_argument ('name', nargs='?')
     namespace = parser.parse_args()
