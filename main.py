@@ -49,4 +49,5 @@ def main():
             print("Ошибка при вводе ссылки!")
 
 
-main()
+if __name__ == '__main__':
+    main()
