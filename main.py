@@ -29,13 +29,11 @@ def count_clicks(token, url):
 
 def main():
     load_dotenv()
-    token = os.getenv("BITLY_TOKEN")
+    token = "Bearer " + os.getenv("BITLY_TOKEN")
     parser = argparse.ArgumentParser()
     parser.add_argument ('name', nargs='?')
     namespace = parser.parse_args()
-    #print("Введите текст: \n")
-    #full_url = urlparse(input("Введите текст: \n").strip())
-    full_url = urlparse(str(namespace.name).strip())
+    full_url = urlparse(namespace.name.strip())
     url = "{}{}".format(full_url.netloc, full_url.path)
     if is_bitlink(token, url):
         try:
