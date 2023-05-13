@@ -1,1 +1,0 @@
-9999999999{"name": "httpsproxy_urllib2", "version": "1.0", "summary": "Python 2.5 urllib2 patched to use CONNECT for https proxies", "platform": "UNKNOWN", "requires_dist": null, "requires_python": null, "files": [], "_cache_version": "1.0.0"}
