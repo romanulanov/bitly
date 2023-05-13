@@ -14,7 +14,8 @@ pip install -r requirements.txt
 ```
 pip install python-dotenv
 ```
-Он позволяет загружать переменные окружения из файла .env в корневом каталоге приложения. Проект будет использовать функцию getenv() для поиска переменной окружения BITLY_TOKEN.
+Он позволяет загружать переменные окружения из файла .env в корневом каталоге приложения. Проект будет использовать функцию getenv() для поиска переменной окружения BITLY_TOKEN. [Как сгенерировать BITLY_TOKEN смотри здесь.](https://support.bitly.com/hc/en-us/articles/230647907-How-do-I-generate-an-OAuth-access-token-for-the-Bitly-API-) Для работы потребуется создать файл .env и задать в нём значение переменной BITLY_TOKEN, например:
+    BITLY_TOKEN = 66e6428d0f7
 
 ### Пример запуска проекта
 
